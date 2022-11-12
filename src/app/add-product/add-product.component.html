@@ -1,0 +1,39 @@
+<app-navbar-rentee></app-navbar-rentee>
+
+<div class="container">
+    <h4 style="text-align: center;">Add New Book</h4>
+    <div class="row">
+        <br>
+        <div class="col col-12 col-md-12 col-lg-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-6 col-md-3">
+                    <label for="" class="form-label">Book Title</label>
+                    <input  name="bookTitle" type="text" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-6 col-md-3">
+                    <label for="" class="form-label">Book Description</label>
+                    <input  name="bookDescription" type="text" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-6 col-md-3">
+                    <label for="" class="form-label">Price</label>
+                    <input  name="price" type="text" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12">
+                    <label for="" class="form-label">Photo</label>
+                    <!-- <input  name="bookimage" type="image" placeholder="Add image" class="form-control"> --> 
+                    <input class="file-upload-input" type="file" onchange="readURL(this)" accept="Image/*">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12">
+                    <button  class="btn btn-success" style="background-color: rgb(59, 105, 234);">SUBMIT</button>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+

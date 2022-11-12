@@ -7,6 +7,16 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 import { ShoppingComponent } from './shopping/shopping.component';
+import { NavbarRenteeComponent } from './navbar-rentee/navbar-rentee.component';
+import { HomeProductComponent } from './home-product/home-product.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const appRoutes : Routes = [
+  {path:"rentee", component:HomeProductComponent},
+  {path:"addProduct", component:AddProductComponent},
+  {path:"",component:ShoppingComponent}
+]
 import { DescriptionComponent } from './description/description.component';
 
 @NgModule({
@@ -15,13 +25,16 @@ import { DescriptionComponent } from './description/description.component';
     HeaderComponent,
     LoginComponent,
     ShoppingComponent,
+    NavbarRenteeComponent,
+    HomeProductComponent,
+    AddProductComponent,
     DescriptionComponent,
-    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
