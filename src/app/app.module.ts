@@ -16,9 +16,12 @@ const appRoutes : Routes = [
   {path:"rentee", component:HomeProductComponent},
   {path:"addProduct", component:AddProductComponent},
   {path:"",component:ShoppingComponent},
-  {path:"description",component:DescriptionComponent}
+  {path:"description",component:DescriptionComponent},
+  {path:"login",component:LoginComponent},
+  {path:"register",component:RegisterComponent}
 ]
 import { DescriptionComponent } from './description/description.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,7 @@ import { DescriptionComponent } from './description/description.component';
     HomeProductComponent,
     AddProductComponent,
     DescriptionComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
