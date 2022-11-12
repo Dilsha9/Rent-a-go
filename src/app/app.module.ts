@@ -17,6 +17,7 @@ const appRoutes : Routes = [
   {path:"addProduct", component:AddProductComponent},
   {path:"",component:ShoppingComponent}
 ]
+import { DescriptionComponent } from './description/description.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ const appRoutes : Routes = [
     ShoppingComponent,
     NavbarRenteeComponent,
     HomeProductComponent,
-    AddProductComponent
+    AddProductComponent,
+    DescriptionComponent,
   ],
   imports: [
     BrowserModule,
