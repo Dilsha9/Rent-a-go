@@ -15,7 +15,8 @@ import { RouterModule, Routes } from '@angular/router';
 const appRoutes : Routes = [
   {path:"rentee", component:HomeProductComponent},
   {path:"addProduct", component:AddProductComponent},
-  {path:"",component:ShoppingComponent}
+  {path:"",component:ShoppingComponent},
+  {path:"description",component:DescriptionComponent}
 ]
 import { DescriptionComponent } from './description/description.component';
 
