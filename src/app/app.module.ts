@@ -18,10 +18,12 @@ const appRoutes : Routes = [
   {path:"",component:ShoppingComponent},
   {path:"description",component:DescriptionComponent},
   {path:"login",component:LoginComponent},
-  {path:"register",component:RegisterComponent}
+  {path:"register",component:RegisterComponent},
+  {path:"cart",component:CartComponent}
 ]
 import { DescriptionComponent } from './description/description.component';
 import { RegisterComponent } from './register/register.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,7 @@ import { RegisterComponent } from './register/register.component';
     AddProductComponent,
     DescriptionComponent,
     RegisterComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
